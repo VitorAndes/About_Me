@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css?family=Inconsolata:400,400i,700");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap");
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+  font-family: Inconsolata, sans-serif;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url("https://images.unsplash.com/photo-1567400358510-f027b3196d5b?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*   backdrop-filter: blur(1px); */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  box-shadow: 10px 10px 15px 3px rgba(0, 0, 0, 0.76);
+  -webkit-box-shadow: 10px 10px 15px 3px rgba(0, 0, 0, 0.76);
+  -moz-box-shadow: 10px 10px 15px 3px rgba(0, 0, 0, 0.76);
+
+  padding: 15px;
+  width: 900px;
+  height: 450px;
+  /*   height:100%; */
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(2px);
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 10px;
+  align-items: center;
+}
+
+.header > h1 {
+    /* background-color: #d7ccc8; */
+  padding: 5px;
+}
+
+.header > h2 {
+  padding: 5px;
+  padding-left: 30px;
+}
+
+.content_container {
+  display: flex;
+  justify-content: center;
+  flex-grow: 2;
+}
+
+.card_img,
+.card_info,
+.card_menu {
+  /*   margin-left: 5px; */
+  margin: 2px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.card_img,
+.card_info {
+  background-color: rgba(0, 0, 0, 0.25);
+  /*     backdrop-filter: blur(2px); */
+}
+
+.card_img {
+  display: flex;
+  align-items: center;
+}
+.card_img img {
+  width: 220px;
+}
+
+.card_info {
+  font-weight: bold;
+}
+
+.card_info img {
+  width: 150px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.card_menu {
+  min-width: 200px;
+}
+
+.card_menu > ul {
+  padding: 0;
+}
+
+.card_menu > ul > li,
+a {
+  text-decoration: none;
+  list-style: none;
+}
+
+.card_menu > ul > li > a {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
